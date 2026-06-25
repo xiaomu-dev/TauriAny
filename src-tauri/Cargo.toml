@@ -1,9 +1,11 @@
 [package]
 name = "tauri-any"
 version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+description = "A Tauri template supporting any frontend UI framework"
+authors = ["xiaomu_dev"]
 edition = "2021"
+repository = "https://github.com/xiaomu-dev/TauriAny"
+license = "CC-BY-NC-SA-4.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -23,3 +25,12 @@ tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
+[profile.dev]
+incremental = true # 将二进制文件分步编译
+
+[profile.release]
+codegen-units = 1 # 加快编译速度，但会牺牲部分编译时优化
+lto = true # 启用链接时优化
+opt-level = "s" # 决定编译器的优化重心. 3:性能, z:体积, s:折中
+panic = "abort" # 通过移除 panic 展开来减小体积
+strip = true # 从二进制文件中剥离符号或调试信息

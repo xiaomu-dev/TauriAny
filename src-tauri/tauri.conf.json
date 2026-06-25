@@ -7,7 +7,8 @@
 		"beforeDevCommand": "cd src && pnpm dev",
 		"devUrl": "http://localhost:1420",
 		"beforeBuildCommand": "cd src && pnpm build",
-		"frontendDist": "../src/dist"
+		"frontendDist": "../src/dist",
+		"removeUnusedCommands": true
 	},
 	"app": {
 		"windows": [
