@@ -5,8 +5,6 @@ const host = process.env.TAURI_DEV_HOST;
 
 // https://vite.dev/config/
 export default defineConfig(async () => ({
-	build: { outDir: '../dist' },
-
 	plugins: [vue()],
 
 	clearScreen: false, // 关闭 vite 清屏，保留rust日志

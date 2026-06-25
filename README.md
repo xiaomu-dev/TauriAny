@@ -54,8 +54,7 @@ import { defineConfig } from 'vite';
 const host = process.env.TAURI_DEV_HOST;
 
 export default defineConfig(async () => ({
-	build: { outDir: '../dist' }, // 和 /src-tauri/tauri.conf.json 内配置对应
-	clearScreen: false, // 关闭 vite 清屏，保留rust日志
+	clearScreen: false,
 	server: {
 		port: 1420,
 		strictPort: true,
