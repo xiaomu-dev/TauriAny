@@ -7,7 +7,8 @@
 		"web:install": "cd src && pnpm install",
 		"web:dev": "cd src && pnpm dev",
 		"web:build": "cd src && pnpm build",
-		"tauri": "tauri"
+		"tauri": "tauri",
+		"tauri:clean": "cd src-tauri && cargo clean"
 	},
 	"dependencies": {
 		"@tauri-apps/api": "^2",
