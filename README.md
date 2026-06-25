@@ -3,8 +3,8 @@ Tauri universal template, freely use any frontend framework.
 一款可自由更换任意前端框架的 Tauri 桌面应用模板
 
 ## ✨ 功能
-前后端完全解耦：src/ 放置完整独立前端工程，src-tauri/ 存放 Tauri Rust 逻辑
-兼容全部 Vite 前端项目：Vue / React / Svelte / Vanilla 原生 JS 直接复制到 src/ 即可使用
+- 前后端完全解耦：src/ 放置完整独立前端工程，src-tauri/ 存放 Tauri Rust 逻辑
+- 兼容全部 Vite 前端项目：Vue / React / Svelte / Vanilla 原生 JS 直接复制到 src/ 即可使用
 
 ## 📦 环境与运行
 
@@ -69,8 +69,8 @@ export default defineConfig(async () => ({
 本项目依赖以下优秀开源项目，在此表示感谢：
 - [Tauri](https://tauri.app/) - 跨平台应用框架
 - [Vite](https://vite.org/) - 前端工具链
-前端 JS/TS 依赖清单：`package.json`
-后端 Rust 依赖清单：`src-tauri/Cargo.toml`
+- 前端 JS/TS 依赖清单：`package.json`
+- 后端 Rust 依赖清单：`src-tauri/Cargo.toml`
 
 ## ⚠️ 重要使用声明
 所有违规、违法、侵权使用产生的全部法律责任，均由使用者自行承担，**项目作者不承担任何连带责任与法律责任**。
